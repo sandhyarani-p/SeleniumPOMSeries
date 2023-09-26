@@ -10,11 +10,17 @@ import org.testng.annotations.Test;
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Story;
+
+
+@Epic("EPIC-202:Design of the account page for open cart app")
+@Story("US 212:implement account page features for open cart")
 public class AccountsPageTest extends BaseTest {
 
 	@BeforeClass
 	public void accPageSetup() {
-		accPage = loginPage.doLogin("janautomation@gmail.com", "Selenium@12345");
+		accPage= loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@Test

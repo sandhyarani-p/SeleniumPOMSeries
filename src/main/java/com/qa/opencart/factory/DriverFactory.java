@@ -17,7 +17,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 /**
  * 
- * @author naveenautomationlabs
+ * @author sandhya
  *
  */
 public class DriverFactory {
@@ -28,7 +28,7 @@ public class DriverFactory {
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 
 	/**
-	 * This is used to initiliaze the driver
+	 * This is used to initialize the driver
 	 * 
 	 * @param browserName
 	 * @return it returns driver
@@ -86,6 +86,7 @@ public class DriverFactory {
 		// mvn clean install -Denv="qa"
 		FileInputStream ip = null;
 		prop = new Properties();
+	
 
 		String envName = System.getProperty("env");
 		System.out.println("env name is : " + envName);
@@ -147,6 +148,8 @@ public class DriverFactory {
 		
 		return path;
 	}
+	
+
 	
 
 }

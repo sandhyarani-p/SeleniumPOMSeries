@@ -35,7 +35,7 @@ public class BaseTest {
 		softAssert = new SoftAssert();
 	}
 	
-	
+		
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
