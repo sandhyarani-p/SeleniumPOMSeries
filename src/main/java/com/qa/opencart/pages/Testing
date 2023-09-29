@@ -1,0 +1,6 @@
+package com.qa.opencart.pages;
+public class Testing{
+
+String name="test merging from master to local branch"
+
+}
