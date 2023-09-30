@@ -3,13 +3,15 @@ package com.qa.opencart.pages;
 public class User {
 
 	public void m1() {
-		
-		int i=10;
-		
-	}
+		double d=10.11;
+	    double d1=23.22;
+			
+		}
 	
-public void m2() {
+public int m2() {
 		
-		String test="testing";		
+		String test="testing";	
+		return 123;
 	}
+
 }
