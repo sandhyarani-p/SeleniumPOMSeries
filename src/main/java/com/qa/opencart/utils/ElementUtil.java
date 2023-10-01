@@ -29,12 +29,12 @@ public class ElementUtil {
 
 	private WebDriver driver;
 	private Actions act;
-	private JavascriptUtil jsUtil;
+	private JavaScriptUtil jsUtil;
 
 	public ElementUtil(WebDriver driver) {
 		this.driver = driver;
 		act = new Actions(driver);
-		jsUtil = new JavascriptUtil(driver);
+		jsUtil = new JavaScriptUtil(driver);
 	}
 @Step("entering value {1}in locator :{0} ")
 
